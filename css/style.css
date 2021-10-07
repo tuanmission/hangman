@@ -1,0 +1,112 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #8C56FF;
+}
+
+.letter_btn {
+    color: white;
+    background-color: #8C56FF;
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.playagain_btn {
+    color: white;
+    background-color: #8C56FF;
+    width: 20rem;
+    height: 6rem;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.playagain_btn:hover {
+    color: #8C56FF;
+    background-color: white;
+    width: 20rem;
+    height: 6rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.letter_btn:disabled {
+    color: black;
+    background-color: grey;
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.letter_btn:disabled .letter_btn:hover {
+    color: black;
+    background-color: grey;
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.letter_btn:hover {
+    color: #8C56FF;
+    background-color: white;
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.game_title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.letter_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.letter_itm {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.guess_row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guessed_letter {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7rem;
+}
+
+@media screen and (min-width:1024px) {
+    .game_title {
+        padding-left: 22rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .letter_row {
+        padding-left: 10rem;
+    }
+}

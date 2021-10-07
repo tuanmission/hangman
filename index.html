@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row my-auto">
+            <h1 class="game_title">JS Hangman Game</h1>
+        </div>
+
+        <div class="row">
+            <div class="letter_row">
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="A" id="A" onclick="checkletter(this)">
+              A
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="B" id="B" onclick="checkletter(this)">
+              B
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="C" id="C" onclick="checkletter(this)">
+              C
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="D" id="D" onclick="checkletter(this)">
+              D
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="E" id="E" onclick="checkletter(this)">
+              E
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="F" id="F" onclick="checkletter(this)">
+              F
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="G" id="G" onclick="checkletter(this)">
+              G
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="H" id="H" onclick="checkletter(this)">
+              H
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="I" id="I" onclick="checkletter(this)">
+              I
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="J" id="J" onclick="checkletter(this)">
+              J
+            </button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="letter_row">
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="K" id="K" onclick="checkletter(this)">
+              K
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="L" id="L" onclick="checkletter(this)">
+              L
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="M" id="M" onclick="checkletter(this)">
+              M
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="N" id="N" onclick="checkletter(this)">
+              N
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="O" id="O" onclick="checkletter(this)">
+              O
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="P" id="P" onclick="checkletter(this)">
+              P
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="Q" id="Q" onclick="checkletter(this)">
+              Q
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="R" id="R" onclick="checkletter(this)">
+              R
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="S" id="S" onclick="checkletter(this)">
+              S
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="T" id="T" onclick="checkletter(this)">
+              T
+            </button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="letter_row">
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="U" id="U" onclick="checkletter(this)">
+              U
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="V" id="V" onclick="checkletter(this)">
+              V
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="W" id="W" onclick="checkletter(this)">
+              W
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="X" id="X" onclick="checkletter(this)">
+              X
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="Y" id="Y" onclick="checkletter(this)">
+              Y
+            </button>
+                </div>
+                <div class="letter_itm">
+                    <button class="letter_btn" data-letter="Z" id="Z" onclick="checkletter(this)">
+              Z
+            </button>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <span class="guess_row">
+          <p class="guessed_letter" id="guessed_word"></p>
+          <br />
+          <p class="guessed_letter">
+            Guesses Left:<span id="number_guesses"></span>
+            </p>
+            </span>
+
+            <br />
+
+            <br />
+        </div>
+        <br />
+        <div class="container">
+            <div class="row my-auto">
+                <p class="guessed_letter" id="game_status"></p>
+                <button class="playagain_btn" id="playagain_btn" onclick="initializegame()">
+            Play Again
+          </button>
+            </div>
+        </div>
+        <br />
+        <p id="letter_chosen" data-id=""></p>
+    </div>
+    <script type="text/javascript" src="script/jquery.min.js"></script>
+    <script type="text/javascript" src="script/hangman.js"></script>
+</body>
+
+</html>
